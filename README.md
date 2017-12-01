@@ -14,6 +14,7 @@ This is my gold-standard project setup for 2018!
 - [Redux](https://github.com/reactjs/redux)
 - [React-Router](https://github.com/reactjs/react-router)
 - [React-Bootstrap](https://react-bootstrap.github.io/)
+- [React-Intl](https://github.com/yahoo/react-intl)
 
 **Styling:** 
 - [CSS Modules](https://github.com/css-modules/css-modules)
