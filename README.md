@@ -18,7 +18,7 @@ This is my gold-standard project setup for 2018!
 
 **Styling:** 
 - [CSS Modules](https://github.com/css-modules/css-modules)
-- Typed CSS Modules
+- [Typed CSS Modules](https://github.com/Quramy/typed-css-modules)
 - [PostCSS](https://github.com/postcss/postcss)
 - [CSSNext](http://cssnext.io/)
 
