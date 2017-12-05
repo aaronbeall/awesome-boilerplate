@@ -6,7 +6,10 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { App } from "./components/App";
 
-console.log("Environment:", process.env.NODE_ENV);
+console.log(`%cEnvironment: ${process.env.NODE_ENV}`, `font-size: large; color: ${process.env.NODE_ENV == "production" ? "green" : "blue"};`);
+if (process.env.NODE_ENV == "development") {
+  console.log("This message only shows in development, and the code is removed completely from production builds.");
+}
 
 ReactDOM.render(
   <App />,
