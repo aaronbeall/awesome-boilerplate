@@ -37,7 +37,7 @@ This is my gold-standard project setup for 2018!
 
 ## Highlights
 
-- Idiomatic TypeScript, with examples of React component classes, stateless functional components, [typed Redux actions and reducers](https://medium.com/@martin_hotell/redux-typescript-typed-actions-with-less-keystrokes-d984063901d), and [typed CSS modules](https://github.com/Quramy/typed-css-modules).
+- Idiomatic TypeScript, with examples of React component classes, stateless functional components, [typed Redux actions and reducers](https://medium.com/@martin_hotell/redux-typescript-typed-actions-with-less-keystrokes-d984063901d), [typed CSS modules](https://github.com/Quramy/typed-css-modules), and [typed unit tests](https://github.com/kulshekhar/ts-jest).
 - [CSS modules](https://github.com/css-modules/css-modules) is the preferred style system, but traditional global CSS is also supported for compatibility.
 - Bootstrap as a basic starting point for React components. For a more advanced component set I recommend [Semantic UI for React](https://react.semantic-ui.com) which has built in TypeScript definitions.
 - Thorough comments in code to explain the setup.
@@ -49,7 +49,7 @@ First clone or fork the project. Then use commands:
 - `npm install` to install all dependencies.
 - `npm start` to begin development. A live-reloaded browser window will open.
 - `npm run build` to build for production. Distribute the `dist` folder.
-- `npm test` to run unit tests.
+- `npm test` to run unit tests. To run tests in watch mode use `npm test -- --watch`.
 
 ## Issues
 
@@ -73,7 +73,7 @@ For me the killer feature of React is that it's 100% component driven with no te
 
 I had experience with [Flux](https://facebook.github.io/flux/) before Redux. I loved the pattern of one-directional data flow (actions -> dispatch -> stores -> views) but found that the stores become hard to manage, since they had a mixture of functionality, state, and sometimes confusing inter-dependencies. [Redux simplifies this](https://stackoverflow.com/a/32920459/2225281) with a single state-only store and reducers that *only* update the state, and in a predictable way. The [Redux dev tools](https://github.com/gaearon/redux-devtools) are also amazing, and Redux has become so popular it's hard not to choose.
 
-As for [MobX](https://github.com/mobxjs/mobx), it looks very interesting and I want to give it a real try. I am somewhat put off by how it throws out some of the core principals espoused by React, Flux and Redux, such as immutable data and dumb components, but the underlying implementation looks brilliant and easy to use. I would consider MobX for a small project.
+As for [MobX](https://github.com/mobxjs/mobx), it looks very interesting and I would love to try it in a real project. I am somewhat put off by how it throws out some of the core principals espoused by React, Flux and Redux, such as immutable data and dumb components, but the underlying implementation looks brilliant and easy to use. I would consider MobX for a small project.
 
 ### Why **CSSNext**? Why not SASS or LESS?
 
