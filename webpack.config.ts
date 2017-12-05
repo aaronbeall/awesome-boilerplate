@@ -6,7 +6,8 @@ const config: webpack.Configuration = {
   entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[chunkhash].bundle.js"
+    filename: "[name].[chunkhash].bundle.js", // Using hash in bundle name enables cache-busting
+    publicPath: "/" // Path to where the output is on the server, using "/" ensures history deep-links still loads bundled output from absolute path
   },
   devtool: "source-map",
   resolve: {
@@ -51,7 +52,7 @@ const config: webpack.Configuration = {
   devServer: {
     publicPath: "/",
     contentBase: "./dist",
-    historyApiFallback: true  // Enables router deep-links to load index.html, a production server would need similar deep-link configuration
+    historyApiFallback: { index: "/" } // Enables router deep-links to load index.html, a production server would need similar deep-link configuration
   },
   plugins: [
     // Create the HTML entry page with injected JS bundle
