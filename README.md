@@ -37,7 +37,7 @@ This is my gold-standard project setup for 2018!
 
 ## Highlights
 
-- Idiomatic TypeScript, with examples of React component classes, stateless functional components, [typed Redux actions and reducers](https://medium.com/@martin_hotell/redux-typescript-typed-actions-with-less-keystrokes-d984063901d), [typed CSS modules](https://github.com/Quramy/typed-css-modules), and [typed unit tests](https://github.com/kulshekhar/ts-jest).
+- Idiomatic TypeScript, with examples of React component classes, stateless functional components, [typed Redux actions and reducers](https://medium.com/@martin_hotell/redux-typescript-typed-actions-with-less-keystrokes-d984063901d), [typed CSS modules](https://github.com/Quramy/typed-css-modules), [typed unit tests](https://github.com/kulshekhar/ts-jest), and [typed webpack configuration](https://medium.com/webpack/unambiguous-webpack-config-with-typescript-8519def2cac7).
 - [CSS modules](https://github.com/css-modules/css-modules) is the preferred style system, but traditional global CSS is also supported for compatibility.
 - Bootstrap as a basic starting point for React components. For a more advanced component set I recommend [Semantic UI for React](https://react.semantic-ui.com) which has built in TypeScript definitions.
 - Thorough comments in code to explain the setup.
