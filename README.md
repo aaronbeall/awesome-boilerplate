@@ -56,7 +56,7 @@ First clone or fork the project. Then use commands:
 
 - Initial run of `npm start` results in several recompiles for a few seconds. This is because `typed-css-modules` writes out a bunch of files (`*.css.d.ts`) and there's a [bug with how `webpack-dev-server` watches recently created files](https://github.com/webpack/watchpack/issues/25).
 - Typed CSS Modules process is separate from Webpack/TypeScript compiler and IDE, meaning sometimes a CSS change is not picked up right away, leading to bogus compile errors. Opening the `*.css.d.ts` file in IDE can nudge it to see the latest.
-- Type defs for `node` and `webpack` are visible to the entire app, even though they are only relevent to the build scripts (like `webpack.config.js`. For example import suggestions might show stuff you shouldn't really import in web code, like node's `fs` module. 
+- Type defs for `node` and `webpack` are visible to the entire app, even though they are only relevent to the build scripts (like `webpack.config.js`). For example import suggestions might show node's `fs` module from a React component file, but you obviously can't use that in a web environment.
 
 ## FAQ
 
