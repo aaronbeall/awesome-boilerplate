@@ -50,7 +50,7 @@ First clone or fork the project. Then use commands:
 - `npm start` to begin development. A live-reloaded browser window will open.
 - `npm run build` to build for production. Distribute the `dist` folder.
 - `npm test` to run unit tests. To run tests in watch mode use `npm test -- --watch`.
-- `npm run lint` to link the code, and `npm run fix` to apply lint fixers.
+- `npm run lint` to lint the code (see `tslint.json`), and `npm run fix` to apply lint fixers.
 
 ## Issues
 
