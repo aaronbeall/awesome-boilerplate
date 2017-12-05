@@ -1,0 +1,12 @@
+@import "../styles/colors.css";
+
+.main {
+  background: var(--bg);
+  & .info {
+    font-style: italic;
+    color: var(--secondary);
+  }
+}
+.title {
+  composes: error from "../styles/text.css";
+}

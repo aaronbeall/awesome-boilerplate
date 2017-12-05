@@ -1,0 +1,6 @@
+@import "./colors.css";
+
+.error {
+  color: var(--error);
+  background: var(--error-bg);
+}

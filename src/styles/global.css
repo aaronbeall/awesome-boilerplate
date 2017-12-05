@@ -1,0 +1,15 @@
+/* 
+Global CSS can go in here, including @imports of other global CSS files. 
+This is mostly for compatibility with old non-module CSS libraries, app CSS should be written entirely using CSS modules.
+This file should be imported once at the app root, NOT throughout the app. 
+*/
+@import "./other-global.css";
+
+body {
+  background: lightcyan;
+}
+
+/* Creating global styles should be avoided, below just demonstrates how global CSS styles can still work in this project's setup if necessary. */
+.global-main {
+  font-family: sans-serif;
+}

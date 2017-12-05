@@ -1,0 +1,11 @@
+/*
+This is just an example of an @imported global CSS file that still supports PostCSS/CSSNext syntax (nesting, vars, etc).
+In most cases global CSS should be avoided, this just demonstrates how old-style global CSS files can still work within this projects setup.
+*/
+@import "./colors.css";
+
+.other-global {
+  & .thing {
+      color: var(--error);
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "awesome-web-starter",
+  "version": "1.0.0",
+  "description": "This is my gold-standard project setup for 2018!",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "npm run clean && npm run tcm",
+    "build": "cross-env NODE_ENV=production webpack -p --progress",
+    "prestart": "npm run tcm",
+    "start": "npm run tcm -- --watch & cross-env NODE_ENV=development webpack-dev-server -d --progress --open",
+    "test": "jest",
+    "clean": "rimraf dist/",
+    "tcm": "tcm --camelCase --pattern \"*src/**/!(*global).css\"",
+    "lint": "tslint --format stylish --project tsconfig.json",
+    "fix": "tslint --format stylish --fix \"src/**/*.{ts,tsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronbeall/awesome-boilerplate.git"
+  },
+  "keywords": [
+    "starter",
+    "react",
+    "redux",
+    "typescript",
+    "webpack",
+    "cssmodules",
+    "postcss",
+    "cssnext"
+  ],
+  "author": "Aaron Beall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronbeall/awesome-boilerplate/issues"
+  },
+  "homepage": "https://github.com/aaronbeall/awesome-boilerplate#readme",
+  "dependencies": {
+    "@types/react": "^16.0.25",
+    "@types/react-bootstrap": "^0.31.8",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-intl": "^2.3.2",
+    "@types/react-redux": "^5.0.14",
+    "@types/react-router-dom": "^4.2.3",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.5.1",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.2.0",
+    "react-intl": "^2.4.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "tslib": "^1.8.0",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/html-webpack-plugin": "^2.30.1",
+    "@types/node": "^8.0.53",
+    "@types/webpack": "^3.8.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.5",
+    "html-webpack-plugin": "^2.30.1",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.9",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.19.0",
+    "ts-loader": "^3.2.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typed-css-modules": "^0.3.1",
+    "typescript": "^2.6.2",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
+  }
+}
